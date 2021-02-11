@@ -16,14 +16,14 @@
                         <p>
                             <label for="txtFirstname">
                                 <span>First name: </span>
-                                <strong><abbr title="required" name="txtFirstname" requried>*</abbr></strong>
+                                <strong><abbr title="required">*</abbr></strong>
                             </label>
                             <input type="text" id="txtFirstname" required>
                         </p>
                         <p>
                             <label for="txtLastname">
                                 <span>Last name: </span>
-                                <strong><abbr title="required" requried>*</abbr></strong>
+                                <strong><abbr title="required">*</abbr></strong>
                             </label>
                             <input type="text" id="txtLastname" required>
                         </p>
@@ -44,7 +44,7 @@
                         
                         <p>
                             <label for="txtTel">Telephone: </label>
-                            <input type="tel" id="txtTel" name="txtTel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"">
+                            <input type="tel" id="txtTel" name="txtTel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                         </p>
 
                         <p>
@@ -67,9 +67,6 @@
                             <input type="date" id="txtDoB" name="txtDoB">
                         </p>
 
-                        <p>
-                            <button type="submit">Submit</button>
-                        </p>
                     </fieldset>
 
                     <fieldset>
@@ -136,7 +133,7 @@
                                 <span>Headaches: </span>
                                 <strong><abbr title="required">*</abbr></strong>
                             </label>
-                            <select id="ddMusAche" name="ddMusAche">
+                            <select id="ddHeadache" name="ddHeadache">
                                 <option value="No" selected>No</option>
                                 <option value="Yes">Yes</option>
                             </select>
@@ -198,6 +195,94 @@
                         </p>
 
                     </fieldset>
+
+                    <fieldset>
+                        <legend>Part 3: Other Questions</legend>
+                        <p>
+                            <label for="ddContact"> 
+                                <span>Have you had contact (within 6 feet for > 15 minutes), or caring for someone who is
+                                    diagnosed with COVID-19 in the last 14 dats and were not wearing proper personal
+                                    protective equipment?
+                                </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                                <br>
+                            </label>
+
+                            <select id="ddContact" name="ddContact">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                            <br>
+                        </p>
+
+                        <p>
+                            <label for="ddRecent"> 
+                                <span>Have you had a diagnosis of COVID-19 in the last 10 days?
+                                </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                                <br>
+                            </label>
+
+                            <select id="ddRecent" name="ddRecent">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                            <br>
+                        </p>
+
+                        <p>
+                            <label for="ddCountry"> 
+                                <span>Have you had traveled to any country in the last 14 days?
+                                </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                                <br>
+                            </label>
+
+                            <select id="ddCountry" name="ddCountry">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                            <br>
+                        </p>
+                            <div>
+                                <label for="txtCountry">
+                                    <span>Which countries? (seperate with comma , )</span>
+                                    <strong><abbr title="required">*</abbr></strong>
+                                </label>
+                                    
+                                <input type="text" id="txtCountry" name="txtCountry" required>
+                            </div>
+                        
+
+                        <p>
+                            <label for="ddSocial"> 
+                                <span>Have you socialized with a group of 6 or more people in the last 14 days?
+                                </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                                <br>
+                            </label>
+
+                            <select id="ddSocial" name="ddSocial">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                            <br>
+                        </p>
+
+                        <p>
+                            <label for="txtTemp">
+                                <span>Current Tempurature: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+
+                            <input type="text" id="txtTemp" name="txtTemp" required pattern="[0-9]+(.[0-9]{0,2})?">
+                        </p>
+
+                    </fieldset>
+                    <p>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </p>
                 </form>
             </article>
 
