@@ -10,7 +10,195 @@
         <section>
             <h2>Please Complete the Form Below:</h2>
             <article>
-                Form goes here...
+                <form>
+                    <fieldset>
+                        <legend>Part 1: Patient Information</legend>
+                        <p>
+                            <label for="txtFirstname">
+                                <span>First name: </span>
+                                <strong><abbr title="required" name="txtFirstname" requried>*</abbr></strong>
+                            </label>
+                            <input type="text" id="txtFirstname" required>
+                        </p>
+                        <p>
+                            <label for="txtLastname">
+                                <span>Last name: </span>
+                                <strong><abbr title="required" requried>*</abbr></strong>
+                            </label>
+                            <input type="text" id="txtLastname" required>
+                        </p>
+
+                        <fieldset>
+                            <legend>Gender: </legend>
+
+                            <input type="radio" id="rbMale" name="gender" value="male">
+                            <label for="rbMale">Male</label>
+
+                            <input type="radio" id="rbFemale" name="gender" value="female">
+                            <label for="rbFemale">Female</label>
+
+                            <input type="radio" id="rbOther" name="gender" value="other">
+                            <label for="rbOther">Other</label>
+
+                        </fieldset>
+                        
+                        <p>
+                            <label for="txtTel">Telephone: </label>
+                            <input type="tel" id="txtTel" name="txtTel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"">
+                        </p>
+
+                        <p>
+                            <label for="txtEmail">Email: 
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <input type="email" id="txtEmail" name="txtEmail" required>
+                        </p>
+
+                        <p>
+                            <label for="txtAddress">Address: </label>
+                            <input type="text" id="txtAddress" name="txtAddress">
+                        </p>
+
+                        <p>
+                            <label for="txtDoB">
+                                <span>Date of birth: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <input type="date" id="txtDoB" name="txtDoB">
+                        </p>
+
+                        <p>
+                            <button type="submit">Submit</button>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Part 2: Potential Symptoms</legend>
+                        <h3>If you have had any of the following Symptoms, select yes.</h3>
+
+                        <p>
+                            <label for="ddFever">
+                                <span>Fevor or Chills: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddFever" name="ddFever">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddCough">
+                                <span>Cough: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddCough" name="ddCough">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddBreath">
+                                <span>Shortness of breath or difficulty breathing: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddBreath" name="ddBreath">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddFatigue">
+                                <span>Fatigue: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddFatigue" name="ddFatigue">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddMuscle">
+                                <span>Muscle or body aches: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddMuscle" name="ddMuscle">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddHeadache">
+                                <span>Headaches: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddMusAche" name="ddMusAche">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddSmell">
+                                <span>New loss of taste or smell: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddSmell" name="ddSmell">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddThroat">
+                                <span>Sore throat: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddThroat" name="ddThroat">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddNose">
+                                <span>Congestion or runny nose: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddNose" name="ddNose">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddVomit">
+                                <span>Nausea or vomiting: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddVomit" name="ddVomit">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="ddDiarrhea">
+                                <span>Liquid stool: </span>
+                                <strong><abbr title="required">*</abbr></strong>
+                            </label>
+                            <select id="ddDiarrhea" name="ddDiarrhea">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+                        </p>
+
+                    </fieldset>
+                </form>
             </article>
 
         </section>
